@@ -1,15 +1,16 @@
-step = 1 #nemenit
-win = 12.6 #zadatjte hodnotu winu ktory ma zacat gamble
-cwin = 1 #ak chcete prehrat poslednom kroku dajte 0 ak neprehrat realny cwin kontrola este neni
-count = 2 #pocer risky games
+win = 5.00 #hodnota pociatocneho wionu do gable
+count = 6 # pocet gaamble
+cwin = 5 # konecny cwin na kontrolu ak chcete prehrat zadajte 0!!
+cwin = int(cwin) #nemanet
+step = 1 #nemenit pomocna premena
+#win = 12.6 #zadatjte hodnotu winu ktory ma zacat gamble
+#cwin = 1 #ak chcete prehrat poslednom kroku dajte 0 ak neprehrat realny cwin kontrola este neni
+#count = 2 #pocer risky games
 startbet = win
 tbet = 0 
 twin = 0
 
-win = float(input('Zadajte pociatocny, win stavku do gamble: '))
-count = int(input('Zadajte pocet gamble: '))
-cwin = float(input('zadajte cwin pre kontrolu ak ma prehrat daj 0 :'))
-win = round(win,2)
+
 
 if cwin>0:
     while (step <= count):
